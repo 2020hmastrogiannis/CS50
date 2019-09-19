@@ -1,8 +1,9 @@
 # Scratch Project
 
-**This is bold**
-*This is italicized*
+**This is bold** <br>
+*This is italicized* <br>
 ~~strikethrough~~
+
 numbered list
 1. item one
 2. item two
