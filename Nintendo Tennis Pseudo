@@ -1,0 +1,83 @@
+Matt Ball
+  Define Point CPU?
+    if touching purple edge
+      change CPU score by 1
+      wait a second
+      go to (-122,22)
+  Define Point User?
+    if touching yellow edge
+      change User score by 1
+      wait a second
+      go to (116,22)
+  when event flag is clicked
+    switch to costume one
+    show variable "User Score" and set to zero
+    show variable "CPU Score" and set to zero
+  when event flag is clicked
+    repeat until the timer is up
+      check Point User?
+      check Point CPU?
+    change costume to big Matt
+  when backdrop is switched to mario tennis
+    go to middle of screen
+    switch costume to "Matt Ball"
+    repeat until touching Federer
+      move three steps
+  when event flag is clicked
+    loop forever
+      if space key is pressed and touching Federer
+        repeat until touching Djokovic
+          move five steps
+      if touching Djokovic
+        repeat until touching Federer 
+          move five steps
+        
+Lakitu
+  when backdrop switches to mario tennis 
+    switch costume to "Lakitu"
+    show and set time to 60 seconds
+    repeat until time is zero
+      wait a second
+      change time by -1
+    if time is zero
+      switch backdrop 
+      hide Lakitu
+  when green flag is clicked 
+    hide Lakitu
+    set time to 60
+Djokovic
+  when event flag clicked
+    go to (285, 93)
+    switch costume to "Novak 1"
+  when backdrop switches to mario tennis
+    wait a second
+    repeat until the time is equal to 0
+      glide a second to (292, 143)
+      wait 0.5 seconds
+      glide a second to (292, 48)
+
+Federer
+  when event flag is clicked 
+     go to (-135, 12)
+  when space key is pressed
+    switch costume to "Federer 1"
+    wait 0.2 seconds
+    switch costume to "Federer 2"
+    wait 0.2 seconds 
+    switch costume to "Federer 1"
+  when Federer is clicked
+    switch background to mario tennis
+    go to (-135, 12)
+  when s key is pressed
+    glide 0.2 seconds in current x position -30 in the y
+  when w key is pressed 
+    glide o.2 seconds in current x position +30 in the y
+Background
+  when event flag is clicked
+    switch background to start screen
+    repeat until timer is 0
+      set volume to 50%
+      set the sound to "Video Game 1"
+      wait 7.7 seonds
+    if timer is 0
+      switch backdrop to endscreen
