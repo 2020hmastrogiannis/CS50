@@ -1,0 +1,9 @@
+C code
+int main(void){
+
+} (This is like public static void main(String[]args){}
+
+In CS50 terminal
+Clang (name of file).c
+./(file name and . and ext)
+-o is output
