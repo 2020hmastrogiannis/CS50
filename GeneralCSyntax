@@ -7,3 +7,9 @@ In CS50 terminal
 Clang (name of file).c
 ./(file name and . and ext)
 -o is output
+
+get_float
+get_int
+
+%s
+%f
