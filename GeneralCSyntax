@@ -13,3 +13,7 @@ get_int
 
 %s
 %f
+.2 between % and f
+
+#include <cs50.h>
+#include <stdio.h>
